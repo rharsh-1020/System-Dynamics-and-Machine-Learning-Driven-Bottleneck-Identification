@@ -1,0 +1,15 @@
+sim_time_min: 480
+interarrival_min: 0.8
+stations:
+  - {name: S1, rate_ppm: 1.0}
+  - {name: S2, rate_ppm: 0.6}
+  - {name: S3, rate_ppm: 1.0}
+shift_event:
+  at_min: 240
+  changes:
+    S2.rate_ppm: 1.0
+    S3.rate_ppm: 0.5
+metrics:
+  - util_percent
+  - avg_queue
+  - completed
